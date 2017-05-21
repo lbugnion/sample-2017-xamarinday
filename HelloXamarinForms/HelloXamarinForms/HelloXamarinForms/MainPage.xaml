@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:androidWidget="clr-namespace:Android.Widget;assembly=Mono.Android;targetPlatform=Android"
+             xmlns:formsandroid="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.Platform.Android;targetPlatform=Android"
+             xmlns:system="clr-namespace:System;assembly=System.Runtime"
+             x:Class="HelloXamarinForms.MainPage">
+
+    <StackLayout>
+        <Button x:Name="MyButton"
+                Text="Click me"/>
+
+        <Label x:Name="MyText"
+               HorizontalOptions="Center">
+            <Label.Text>
+                <OnPlatform Android="Hello Android"
+                            iOS="Hello iOS"
+                            WinPhone="Hello WinPhone"
+                            x:TypeArguments="system:String"/>
+            </Label.Text>
+        </Label>
+
+        <androidWidget:TextView Text="Native Text"
+                                x:Arguments="{x:Static formsandroid:Forms.Context}" />
+    </StackLayout>    
+    
+</ContentPage>
