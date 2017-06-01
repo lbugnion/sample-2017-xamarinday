@@ -1,11 +1,11 @@
-# sample-2017-xamarinday
+# Xamarin Day 2017, Zurich, Switzerland
 My code samples for the Xamarin Day conference, 16th of May 2017, Zurich, Switzerland
 
 # Presentation details, Slides
 
 You can see the slides and details here:
 
-http://galasoft.ch/presentations/presentationdetails.cshtml?name=TODO
+http://galasoft.ch/presentations#xamarinday17
 
 # Content
 
